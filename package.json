@@ -1,0 +1,31 @@
+{
+  "name": "koa-typescript-template",
+  "version": "1.0.0",
+  "description": "koa-typescript-template",
+  "main": "index.js",
+  "author": "韩春华 <hanchunhua@corp-ci.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tslint --project . && tsc",
+    "watch": "cross-env NODE_ENV=development nodemon --watch src/**/* -e ts,tsx --exec ts-node src/server.ts"
+  },
+  "dependencies": {
+    "@types/koa-static": "^4.0.1",
+    "glob": "^7.1.6",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/koa": "^2.11.0",
+    "@types/koa-bodyparser": "^5.0.1",
+    "@types/koa-router": "^7.0.42",
+    "cross-env": "^6.0.3",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.5.4",
+    "tslint": "^6.0.0-beta0",
+    "typescript": "^3.7.4"
+  }
+}
